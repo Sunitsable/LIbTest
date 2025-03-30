@@ -31,7 +31,7 @@ class TestLibrary(unittest.TestCase):
     def test_negative_copies_addition(self):
         """Test that adding a negative number of copies raises an error."""
         with self.assertRaises(ValueError):
-            self.library.add_book("Algorithms", +1)
+            self.library.add_book("Algorithms", -1)
     def test_borrow_last_copy(self):
         """Test that borrowing the last copy makes the book unavailable."""
         self.library.borrow_book("Python Programming")
